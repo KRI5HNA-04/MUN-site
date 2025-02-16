@@ -20,83 +20,101 @@
       type="image/x-icon"
     />
 
-    <title>Portfolio | Ludiflex</title>
+    <title>CU MUN'25</title>
   </head>
   <body>
     <div class="container">
       <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
-          <p class="nav-name">Doe</p>
-          <span>.</span>
+          <div class="nav-name image-flex">
+            <a href="https://iste-website-au6d.vercel.app/" target="_blank"
+              ><img
+                class="iste-logo"
+                src="/assets/images/ISTE-Logo.png"
+                alt="ISTE-Logo"
+            /></a>
+
+            <a href="https://www.cuchd.in/" target="_blank"
+              ><img
+                class="Cu-logo"
+                src="/assets/images/images-removebg-preview.png"
+                alt="CU-Logo"
+            /></a>
+          </div>
+
+          <!-- <div class="image-flex"></div> -->
         </div>
         <div class="nav-menu" id="myNavMenu">
           <ul class="nav_menu_list">
             <li class="nav_list">
               <a href="/home.html" class="nav-link active-link">Home</a>
-              <div class="circle"></div>
+              <!-- <div class="circle"></div> -->
             </li>
             <li class="nav_list">
               <a href="/about.html" class="nav-link">About</a>
-              <div class="circle"></div>
+              <!-- <div class="circle"></div> -->
             </li>
             <li class="nav_list">
               <a href="/registration.html" class="nav-link">Registration</a>
-              <div class="circle"></div>
+              <!-- <div class="circle"></div> -->
             </li>
             <li class="nav_list">
               <a href="/contact.html" class="nav-link">Contact</a>
-              <div class="circle"></div>
+              <!-- <div class="circle"></div> -->
             </li>
           </ul>
         </div>
         <div class="nav-button">
-          <button class="btn">
-            Download CV <i class="uil uil-file-alt"></i>
-          </button>
+          <button class="btn2"><i class="uil uil-moon"></i></button>
         </div>
         <div class="nav-menu-btn">
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
 
-      <!-- -------------- MAIN ---------------- -->
-      <main class="wrapper">
-        <!-- -------------- FEATURED BOX ---------------- -->
-        <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-              <span>John Doe</span>
+      <div class="dark-body">
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+          <!-- -------------- FEATURED BOX ---------------- -->
+          <section class="featured-box" id="home">
+            <div class="featured-text">
+              <div class="featured-text-card">
+                <span>Model United Nations (MUN)</span>
+              </div>
+              <div class="featured-name">
+                <p>Organized By <span class="typedText"></span></p>
+              </div>
+              <div class="featured-text-info">
+                <p>
+                  MUN (Model United Nations) is a simulation of the United
+                  Nations where students role-play as delegates, debate global
+                  issues, and develop diplomacy, public speaking, and
+                  negotiation skills.
+                </p>
+              </div>
+              <div class="featured-text-btn">
+                <a href="/registration.html"
+                  ><button class="btn3 blue-btn">Register</button></a
+                >
+
+                <a href="/about.html"><button class="btn">Know More</button></a>
+              </div>
+              <div class="social_icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-dribbble"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+              </div>
             </div>
-            <div class="featured-name">
-              <p>I'm <span class="typedText"></span></p>
+            <div class="featured-image">
+              <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar" />
+              </div>
             </div>
-            <div class="featured-text-info">
-              <p>
-                Experienced frontend developer with a passion for creating
-                visually stunning and user-friendly websites.
-              </p>
-            </div>
-            <div class="featured-text-btn">
-              <button class="btn blue-btn">Hire Me</button>
-              <button class="btn">
-                Download CV <i class="uil uil-file-alt"></i>
-              </button>
-            </div>
-            <div class="social_icons">
-              <div class="icon"><i class="uil uil-instagram"></i></div>
-              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-              <div class="icon"><i class="uil uil-dribbble"></i></div>
-              <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-              <img src="assets/images/avatar.png" alt="avatar" />
-            </div>
-          </div>
-        </section>
-      </main>
+          </section>
+        </main>
+      </div>
 
       <!-- --------------- FOOTER --------------- -->
       <footer>

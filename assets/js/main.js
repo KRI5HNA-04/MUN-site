@@ -30,7 +30,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Designer", "Youtuber", "Developer"],
+  strings: ["ISTE-CU", "Chandigarh University"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
@@ -108,3 +108,23 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const darkModeToggle = document.querySelector(".btn2");
+  const wrapper = document.querySelector(".wrapper");
+  const icon = darkModeToggle.querySelector("i");
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    // document.footer.classList.toggle("dark-mode");
+
+    // Change icon based on mode
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.remove("uil-moon");
+      icon.classList.add("uil-sun");
+    } else {
+      icon.classList.remove("uil-sun");
+      icon.classList.add("uil-moon");
+    }
+  });
+});

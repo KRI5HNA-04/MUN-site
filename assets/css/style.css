@@ -15,8 +15,20 @@
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
-
 }
+
+/* ----- DARK MODE ----- */
+.dark-mode {
+    --body-color: #000814;
+    --color-white: #000814;
+
+    --text-color-second: rgb(200, 200, 200);
+    --text-color-third: rgb(100, 200, 220);
+
+    --first-shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+
 
 /* ----- BASE ----- */
 * {
@@ -48,6 +60,22 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #bbb;
+}
+
+.btn2 {
+    height: 50px;
+    width: 50px;
+    font-weight: 500;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn2:hover {
+    background: var(--second-color);
+    color: var(--color-white);
 }
 
 
@@ -112,6 +140,28 @@ nav {
     color: var(--text-color-third);
 }
 
+.nav-name img {
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+}
+
+.image-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* Change from column to row */
+    gap: 20px;
+    /* Optional: Adds space between images */
+}
+
+.image-flex .Cu-logo {
+    width: 150px;
+    height: 50px;
+}
+
+
 .nav-logo span {
     position: absolute;
     top: -15px;
@@ -149,7 +199,7 @@ nav {
 
 .active-link {
     position: relative;
-    color: var(--first-color);
+    color: #0077b6;
     transition: .3;
 }
 
@@ -161,7 +211,7 @@ nav {
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
-    background: var(--first-color);
+    background: #0077b6;
     border-radius: 50%;
 }
 
@@ -192,11 +242,13 @@ nav {
 }
 
 .featured-text-card span {
-    background: var(--third-color);
+    background: #f7b801;
     color: var(--color-white);
-    padding: 3px 8px;
+    padding: 10px;
     font-size: 12px;
     border-radius: 5px;
+    font-size: 20px;
+
 }
 
 .featured-name {
@@ -204,14 +256,16 @@ nav {
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
+    width: 1000px;
 }
 
 .typedText {
     text-transform: capitalize;
-    color: var(--text-color-third);
+    color: #0077b6;
 }
 
 .featured-text-info {
+    margin-top: 25px;
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
@@ -250,6 +304,28 @@ nav {
 
 .icon:hover {
     color: var(--first-color);
+}
+
+.featured-text-btn.blue-btn {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.btn3 {
+    background: #0077b6;
+    font-weight: 500;
+    padding: 12px 20px;
+    /* background: #efefef; */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn3:hover {
+    background: var(--second-color);
+    color: var(--color-white);
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
@@ -343,6 +419,23 @@ h3 {
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 15px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: transparent;
+    /* Fully transparent */
+    backdrop-filter: blur(10px);
+    /* Optional: Blur effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Shadow for readability */
+    z-index: 100;
+    transition: background 0.3s ease;
+    /* Smooth transition */
 }
 
 /* ----- ABOUT INFO ----- */
