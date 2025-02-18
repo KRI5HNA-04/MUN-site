@@ -111,7 +111,7 @@ window.addEventListener("scroll", scrollActive);
 
 document.addEventListener("DOMContentLoaded", () => {
   const darkModeToggle = document.querySelector(".btn2");
-  const wrapper = document.querySelector(".wrapper");
+  // const wrapper = document.querySelector(".wrapper");
   const icon = darkModeToggle.querySelector("i");
 
   darkModeToggle.addEventListener("click", () => {
